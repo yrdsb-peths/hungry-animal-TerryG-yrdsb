@@ -21,10 +21,16 @@ public class MyWorld extends World
         Turtle turtle = new Turtle();
         addObject(turtle, 300, 200);
         
+        createApple();
+    }
+    /***
+     * makes new apples at random
+     */
+    public void createApple()
+    {
         Apple apple = new Apple();
-        addObject(apple, 500, 200);
-        
-        ///placeholder
-    
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(apple, x, y);
     }
 }

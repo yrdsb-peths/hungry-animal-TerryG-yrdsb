@@ -14,6 +14,17 @@ public class Turtle extends Actor
      */
     public void act()
     {
-        move(1);// Add your action code here.
+        // Add your action code here.
+        if(Greenfoot.isKeyDown("left"))
+        {
+            move(-1);
+        }
+        else if(Greenfoot.isKeyDown("right"))
+        {
+            move(1);
+        }
+        
+        //removes apple if eaten
+        removeTouching(Apple.class);
     }
 }
