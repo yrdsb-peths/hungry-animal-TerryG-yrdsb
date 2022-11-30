@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * The turtle. He is cool.
  * 
  * @author (Terry) 
- * @version (Nov 25/22)
+ * @version (Nov 30/22)
  */
 public class Turtle extends Actor
 {
@@ -14,17 +14,31 @@ public class Turtle extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        // makes turtle move
         if(Greenfoot.isKeyDown("left"))
         {
-            move(-1);
+            move(-2);
         }
         else if(Greenfoot.isKeyDown("right"))
         {
-            move(1);
+            move(2);
         }
         
         //removes apple if eaten
-        removeTouching(Apple.class);
+        eat();
+    }
+    
+    /**
+     * eats the apple and creates a new one if eaten
+     */
+    public void eat()
+    {
+        if(isTouching(Apple.class))
+        {
+            removeTouching(Apple.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.createApple();
+            world.increaseScore();
+        }
     }
 }
