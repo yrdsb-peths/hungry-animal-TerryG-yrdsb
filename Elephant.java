@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The turtle. He is cool.
+ * The elephant. He is cool.
  * 
  * @author (Terry) 
  * @version (Nov 30/22)
  */
-public class Turtle extends Actor
+public class Elephant extends Actor
 {
     /**
      * Act - do whatever the turtle wants to do. This method is called whenever

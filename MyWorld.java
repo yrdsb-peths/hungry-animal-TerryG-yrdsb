@@ -24,8 +24,8 @@ public class MyWorld extends World
          */
         
         //Creates turtle object
-        Turtle turtle = new Turtle();
-        addObject(turtle, 300, 300);
+        Elephant elephant = new Elephant();
+        addObject(elephant, 300, 300);
         //creates the label
         scoreTracker = new Label(0, 80);
         addObject(scoreTracker, 25, 25);
