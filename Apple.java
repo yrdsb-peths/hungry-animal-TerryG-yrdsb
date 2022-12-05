@@ -15,7 +15,7 @@ public class Apple extends Actor
     public void act()
     {
         // Apple falls
-        setLocation(getX(), getY()+1);
+        setLocation(getX(), getY()+2);
         
         // This removes the apple and prints game over if it touches the ground
         MyWorld world = (MyWorld) getWorld();
