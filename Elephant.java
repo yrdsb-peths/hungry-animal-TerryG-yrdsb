@@ -79,7 +79,7 @@ public class Elephant extends Actor
         //removes apple if eaten
         eat();
         
-        //Elephant idle
+        //Elephant idle animation
         animateElephant();
     }
     

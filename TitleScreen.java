@@ -12,7 +12,6 @@ public class TitleScreen extends World
     Label pressToStart = new Label("press space to start", 50);
     /**
      * Constructor for objects of class TitleScreen.
-     * 
      */
     public TitleScreen()
     {    
@@ -20,16 +19,16 @@ public class TitleScreen extends World
         super(600, 400, 1);
         
         addObject(titleLabel, getWidth()/2, getHeight()/2);
-        addObject(pressToStart, getWidth()/2, (getHeight()/8)*5);
+        //addObject(pressToStart, getWidth()/2, (getHeight()/8)*5);
     }
     
     /**
-     * Goes to the game
+     * Act to start the game.
      */
     public void act()
     {
         //starts game if space is pressed
-        if (Greenfoot.isKeyDown("space"));
+        if(Greenfoot.isKeyDown("space"))
         {
             MyWorld game = new MyWorld();
             Greenfoot.setWorld(game);

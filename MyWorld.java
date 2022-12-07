@@ -12,7 +12,6 @@ public class MyWorld extends World
     Label scoreTracker;
     /**
      * Constructor for objects of class MyWorld.
-     * 
      */
     public MyWorld()
     {    
@@ -34,7 +33,8 @@ public class MyWorld extends World
     }
     
     /**
-     * This will end the game if the pple isn't collected
+     * This will end the game if the apple touches the bottom
+     * prints GAME OVER on screen
      */
     
     public void gameOver()
