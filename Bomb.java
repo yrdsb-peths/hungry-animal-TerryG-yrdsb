@@ -9,7 +9,7 @@ public class Bomb extends Actor
 {
     int speed = 1;
     public void act()
-    {
+    {   
         // Bomb falls
         setLocation(getX(), getY()+speed);
         

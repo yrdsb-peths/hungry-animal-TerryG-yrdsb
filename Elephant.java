@@ -97,7 +97,7 @@ public class Elephant extends Actor
             world.increaseScore();
             elephantSound.play();
             
-            if(count < 3)
+            if(count < 2)
             {
                 world.createBomb();
                 count++;

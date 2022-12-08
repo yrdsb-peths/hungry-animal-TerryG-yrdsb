@@ -48,17 +48,18 @@ public class TitleScreen extends World
 
         Label label3 = new Label("PRESS <SPACE> TO START", 45);
         addObject(label3,274,326);
+        
+        Label label4 = new Label("dodge the bombs", 40);
+        addObject(label4,287,200);
 
         label.setLocation(getWidth()/2, 100);
         label2.setLocation(getWidth()/2,140);
-        label3.setLocation(getWidth()/2,320);
-        
+        label3.setLocation(getWidth()/2,370);
+        label4.setLocation(getWidth()/2,179);
+
         Elephant_image elephant_image = new Elephant_image();
-        addObject(elephant_image,0,0);
+        addObject(elephant_image,230,270);
         Apple_image apple_image = new Apple_image();
-        addObject(apple_image,0,0);
-        
-        elephant_image.setLocation(216,227);
-        apple_image.setLocation(349,243);
+        addObject(apple_image,351,284);
     }
 }
