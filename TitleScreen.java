@@ -9,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class TitleScreen extends World
 {
     Label titleLabel = new Label("HUNGRY ELEPHANT", 70);
-    Label pressToStart = new Label("press space to start", 50);
     /**
      * Constructor for objects of class TitleScreen.
      */
@@ -17,11 +16,11 @@ public class TitleScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
-        
-        addObject(titleLabel, getWidth()/2, getHeight()/2);
-        //addObject(pressToStart, getWidth()/2, (getHeight()/8)*5);
+
+        addObject(titleLabel, getWidth()/2, getHeight()/8);
+        prepare();
     }
-    
+
     /**
      * Act to start the game.
      */
@@ -33,5 +32,33 @@ public class TitleScreen extends World
             MyWorld game = new MyWorld();
             Greenfoot.setWorld(game);
         }
+    }
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        Label label = new Label("move using <- and ->", 40);
+        addObject(label,297,233);
+
+        Label label2 = new Label("move to catch the apples", 40);
+        addObject(label2,312,246);
+
+        Label label3 = new Label("PRESS <SPACE> TO START", 45);
+        addObject(label3,274,326);
+
+        label.setLocation(getWidth()/2, 100);
+        label2.setLocation(getWidth()/2,140);
+        label3.setLocation(getWidth()/2,320);
+        
+        Elephant_image elephant_image = new Elephant_image();
+        addObject(elephant_image,0,0);
+        Apple_image apple_image = new Apple_image();
+        addObject(apple_image,0,0);
+        
+        elephant_image.setLocation(216,227);
+        apple_image.setLocation(349,243);
     }
 }
