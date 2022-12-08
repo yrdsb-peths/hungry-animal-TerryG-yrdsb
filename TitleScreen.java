@@ -40,7 +40,7 @@ public class TitleScreen extends World
      */
     private void prepare()
     {
-        Label label = new Label("move using <- and ->", 40);
+        Label label = new Label("move using \u2190 and \u2192", 40);
         addObject(label,297,233);
 
         Label label2 = new Label("move to catch the apples", 40);
