@@ -83,6 +83,7 @@ public class Elephant extends Actor
         animateElephant();
     }
     
+    int count = 0;
     /**
      * eats the apple and creates a new one if eaten
      */
@@ -95,6 +96,12 @@ public class Elephant extends Actor
             world.createApple();
             world.increaseScore();
             elephantSound.play();
+            
+            if(count < 3)
+            {
+                world.createBomb();
+                count++;
+            }
         }
     }
 }
