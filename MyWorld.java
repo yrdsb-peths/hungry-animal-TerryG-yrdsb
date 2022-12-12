@@ -49,6 +49,7 @@ public class MyWorld extends World
     
     /**
      * This will allow the scoreTracker to increase when an apple is collected
+     * this will also create another bomb every 10 points
      */
     public void increaseScore()
     {
@@ -58,6 +59,7 @@ public class MyWorld extends World
         if(score % 10 == 0)
         {
             level += 1;
+            createBomb();
         }
     }
     
