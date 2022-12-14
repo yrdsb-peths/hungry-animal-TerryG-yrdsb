@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
 /**
- * Write a description of class MyWorld here.
+ * world with elephant
+ * 
  * 
  * @author (Terry) 
  * @version (Nov 30/22)
