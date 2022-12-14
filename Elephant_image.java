@@ -6,6 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (Terry) 
  * @version (Dec 7/22)
  */
+
 public class Elephant_image extends Actor
 {
     GreenfootImage[] idle = new GreenfootImage[8];

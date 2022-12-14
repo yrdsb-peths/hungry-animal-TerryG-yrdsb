@@ -11,6 +11,7 @@ public class MyWorld extends World
     public int score = 0;
     Label scoreTracker;
     int level = 1;
+    /**nice job**/
     /**
      * Constructor for objects of class MyWorld.
      */
